@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature, Efficiency, and Algorithm Design</title>
+    <title>Design and Analysis of Algorithms</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -70,123 +70,38 @@
     </style>
 </head>
 <body>
-    <h1>Nature, Efficiency, and Algorithm Design</h1>
+    <h1>Introduction to Design and Analysis of Algorithms</h1>
 
     <div class="section">
-        <h2>1. Problems in Nature: Iteration, Recursion, and Backtracking</h2>
-        <h3>Iteration</h3>
-        <p>Iteration is seen in nature through repetitive cycles that continue over time. For example:</p>
-        <ul>
-            <li>Cell division process (mitosis).</li>
-            <li>Seasonal migration patterns of animals, such as birds.</li>
-            <li>The water cycle with repeated phases of evaporation, condensation, and precipitation.</li>
-        </ul>
+        <h2>What is the course about?</h2>
+        <p>This course focuses on teaching the methodologies to design algorithms and evaluate their efficiency through time complexity and space complexity analysis. It emphasizes problem-solving through recursion, iteration, and efficient use of data structures.</p>
+    </div>
 
-        <h3>Recursion</h3>
-        <p>Recursion appears in nature through self-similar structures. Examples include:</p>
+    <div class="section">
+        <h2>What kind of data structures and algorithms have you studied?</h2>
         <ul>
-            <li>Trees exhibiting recursive branching patterns.</li>
-            <li>DNA replication, where each strand guides the creation of its complementary strand.</li>
-            <li>Fibonacci sequence patterns in plants.</li>
-        </ul>
-
-        <h3>Backtracking</h3>
-        <p>Backtracking is common in problem-solving processes in nature:</p>
-        <ul>
-            <li>Animals retrace steps when a path is unfruitful.</li>
-            <li>The immune system tries alternative strategies when initial responses fail.</li>
-            <li>Climbing plants adjust direction when encountering obstacles.</li>
+            <li>Time Complexity and Order of Growth</li>
+            <li>Binary Trees, Traversals, and BST Operations</li>
+            <li>Skip List, Trie, Range Query, Fenwick Tree</li>
+            <li>Graphs and Traversals</li>
+            <li>Heap and Priority Queues</li>
+            <li>Sorting Algorithms</li>
+            <li>String Processing (KMP, Rabin-Karp, Shift Tables)</li>
+            <li>Spanning Trees (Prim's and Kruskal's Algorithms)</li>
+            <li>Shortest Path Algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>2. Space and Time Efficiency: Significance and Growth Orders</h2>
-        <h3>Definition and Importance</h3>
+        <h2>How do you connect the course with real-time applications?</h2>
+        <p>The knowledge from this course plays a vital role in real-world applications, including:</p>
         <ul>
-            <li><strong>Time Efficiency:</strong> Determines how well an algorithm scales with input size.</li>
-            <li><strong>Space Efficiency:</strong> Crucial for systems with limited memory.</li>
-        </ul>
-        <p>The choice often involves trade-offs between time and space usage.</p>
-
-        <h3>Orders of Growth</h3>
-        <table>
-            <tr><th>Order</th><th>Growth Type</th><th>Example</th></tr>
-            <tr><td>O(1)</td><td>Constant</td><td>Accessing an array element by index</td></tr>
-            <tr><td>O(log n)</td><td>Logarithmic</td><td>Binary search</td></tr>
-            <tr><td>O(n)</td><td>Linear</td><td>Iterating through an array</td></tr>
-            <tr><td>O(n log n)</td><td>Linearithmic</td><td>Merge sort</td></tr>
-            <tr><td>O(n²)</td><td>Quadratic</td><td>Bubble sort</td></tr>
-            <tr><td>O(2<sup>n</sup>)</td><td>Exponential</td><td>Brute force solutions</td></tr>
-            <tr><td>O(n!)</td><td>Factorial</td><td>Evaluating all permutations</td></tr>
-        </table>
-    </div>
-
-    <div class="section">
-        <h2>3. Design Principles: Chapter 2 Takeaways</h2>
-        <ul>
-            <li><strong>Decomposition:</strong> Breaking problems into smaller parts (e.g., zombie detection tasks).</li>
-            <li><strong>Pattern Recognition:</strong> Identifying recurring structures in problems.</li>
-            <li><strong>Abstraction:</strong> Focusing on size, position, and relationships while ignoring irrelevant details.</li>
-            <li><strong>Cautious and Bold Travel:</strong> BFS for level-wise exploration; DFS for deep exploration.</li>
-            <li><strong>Pruning:</strong> Eliminating invalid paths early (e.g., N-Queens problem).</li>
-            <li><strong>Memoization:</strong> Avoiding redundant work by storing intermediate results.</li>
-            <li><strong>Lazy Propagation:</strong> Delaying updates until absolutely necessary.</li>
+            <li><strong>Optimization:</strong> Algorithms like Dijkstra's and Bellman-Ford are used in transportation and network routing systems.</li>
+            <li><strong>Data Management:</strong> Data structures like Trie and Fenwick Trees optimize search and range query operations.</li>
+            <li><strong>Text Processing:</strong> String algorithms such as KMP are applied in text editors, search engines, and DNA sequence matching.</li>
+            <li><strong>Artificial Intelligence:</strong> Graph algorithms contribute to pathfinding and decision-making in AI systems.</li>
         </ul>
     </div>
+</body>
+</html>
 
-    <div class="section">
-        <h2>4. Trees and Optimization Techniques</h2>
-        <ul>
-            <li><strong>Binary Trees:</strong> Simple but unbalanced structures.</li>
-            <li><strong>Binary Search Trees:</strong> Efficient but can degrade to O(n) without balancing.</li>
-            <li><strong>AVL Trees:</strong> Self-balancing, maintaining O(log n) height.</li>
-            <li><strong>Red-Black Trees:</strong> Balanced with fewer rotations than AVL trees.</li>
-            <li><strong>Tries:</strong> Specialized for string operations and prefix queries.</li>
-            <li><strong>Heaps:</strong> Priority queues with O(1) access to the max/min element.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>5. Array Query Algorithms</h2>
-        <ul>
-            <li><strong>Lookup Table:</strong> Precomputed data for fast O(1) lookups.</li>
-            <li><strong>Segment Trees:</strong> Efficient for range queries and updates in O(log n).</li>
-            <li><strong>Sparse Table:</strong> Constant-time range queries for static data.</li>
-            <li><strong>Fenwick Trees:</strong> Logarithmic-time prefix sums and range queries.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>6. Trees vs. Graphs: Key Differences and Applications</h2>
-        <table>
-            <tr>
-                <th>Aspect</th>
-                <th>Tree</th>
-                <th>Graph</th>
-            </tr>
-            <tr>
-                <td>Structure</td>
-                <td>Hierarchical, no cycles</td>
-                <td>Can be cyclic or acyclic</td>
-            </tr>
-            <tr>
-                <td>Connections</td>
-                <td>Each node has one parent (except root)</td>
-                <td>Nodes can have multiple connections</td>
-            </tr>
-            <tr>
-                <td>Root Node</td>
-                <td>Single root</td>
-                <td>No single root</td>
-            </tr>
-            <tr>
-                <td>Traversal</td>
-                <td>Preorder, Inorder, Postorder</td>
-                <td>DFS, BFS</td>
-            </tr>
-            <tr>
-                <td>Applications</td>
-                <td>File systems, expression trees</td>
-                <td>Social networks, routing</td>
-            </tr>
-        </table>
