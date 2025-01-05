@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #76c7c0; /* Cyan for the title */
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #cccccc; /* Light gray for description */
+}
+
+/* Section Styling */
+section {
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #76c7c0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #76c7c0;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase; /* Makes section titles distinct */
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.75rem;
+    color: #cccccc;
+}
+
+ul li a {
+    color: #76c7c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Definition List Styling */
+dl dt {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff; /* Bright white for terms */
+    margin-top: 1rem;
+}
+
+dl dd {
+    margin-left: 1.5rem;
+    font-size: 0.95rem;
+    color: #cccccc; /* Subtle contrast for details */
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    color: #cccccc;
+    border-left: 4px solid #76c7c0;
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+        padding: 1rem;
+    }
+}
