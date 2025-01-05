@@ -67,9 +67,36 @@
             font-weight: bold;
             color: #00509e;
         }
+
+        /* Styling for buttons */
+        .nav-buttons {
+            margin-bottom: 20px;
+        }
+
+        .nav-buttons button {
+            background-color: #00509e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #003f6c;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <button onclick="window.location.href='index2.html'">Course Learning Reflections</button>
+        <button onclick="window.location.href='index3.html'">Subsection Answers</button>
+        <button onclick="window.location.href='index4.html'">About Course Project</button>
+    </div>
+
     <h1>Introduction to Design and Analysis of Algorithms</h1>
 
     <div class="section">
@@ -104,4 +131,5 @@
     </div>
 </body>
 </html>
+
 
