@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efficient Rail Network and Crowd Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #00509e;
+        }
+
+        h1 {
+            border-bottom: 2px solid #00509e;
+            padding-bottom: 5px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #00509e;
+            color: white;
+        }
+
+        .intro, .problem, .functionality {
+            margin-top: 15px;
+            color: #555;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #00509e;
+        }
+
+        .answer {
+            margin-top: 5px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Efficient Rail Network and Crowd Management System</h1>
+
+    <div class="section">
+        <h2>Team Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl. No</th>
+                    <th>Name</th>
+                    <th>USN</th>
+                    <th>Roll No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Vijaykumar</td>
+                    <td>01FE23BCI083</td>
+                    <td>139</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Madhav</td>
+                    <td>01FE23BCI036</td>
+                    <td>117</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bandu</td>
+                    <td>01FE23BCI100</td>
+                    <td>147</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Shaktiprasad</td>
+                    <td>01FE23BCI011</td>
+                    <td>159</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>All of us have heard of the Mumbai local trains, often referred to as the lifeline of the city by Mumbaikars. While these trains are convenient, cost-efficient, and faster than other modes of transport, they suffer from poor crowd management both on the trains and at the stations. Given their popularity, especially among daily commuters, it is essential to manage the crowds effectively. Additionally, first-time visitors to the city often face confusion navigating the extensive rail network. There is a clear need for an efficient guide or recommendation system that suggests places to visit in Mumbai, along with information on travel time, distance, and the nearest stations. Furthermore, with around 88 stations and a large workforce, managing employee data and calculating revenue efficiently is crucial. These challenges were highlighted in the white paper titled "Streets," which discusses life in Mumbai, underscoring the necessity for a solution that can enhance the commuting experience for both residents and tourists.</p>
+    </div>
+
+    <div class="section">
+        <h2>Problem Statement Description</h2>
+        <p>The inefficiency in crowd management at railway stations during peak hours leads to significant inconvenience for passengers, causing long wait times and overcrowding. This chaos not only frustrates daily commuters but also makes it difficult for first-time visitors to navigate the rail network. There is a pressing need for an effective system that provides real-time insights into crowd density and optimizes travel routes and enhances the passenger experience by dynamically managing crowd levels and offering immediate information about available routes.</p>
+    </div>
+
+    <div class="section">
+        <h2>Functionality Selection</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl. No</th>
+                    <th>Functionality</th>
+                    <th>Principles Applicable</th>
+                    <th>Algorithms Used</th>
+                    <th>Data Structures Used</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Introduce a new station into the rail network by providing its name, geographical coordinates, and crowd density.</td>
+                    <td>Brute Force</td>
+                    <td>None</td>
+                    <td>Array (for storing stations)</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Establish a new route between two existing stations by specifying the travel time or distance.</td>
+                    <td>Transform and conquer</td>
+                    <td>None (Graph representation using matrix)</td>
+                    <td>Adjacency Matrix</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Explore the rail network starting from a chosen station, systematically visiting all reachable stations.</td>
+                    <td>Graph Traversal</td>
+                    <td>Breadth-First Search (BFS)</td>
+                    <td>Queue, Array (for visited)</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Determine the best route for traveling between two stations by evaluating various paths.</td>
+                    <td>Greedy Technique</td>
+                    <td>Dijkstra’s Algorithm</td>
+                    <td>Array (for distances), Priority Queue (for selecting the next station)</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Analyze the entire rail network to find the quickest routes connecting every pair of stations.</td>
+                    <td>Dynamic Programming</td>
+                    <td>Floyd-Warshall Algorithm</td>
+                    <td>2D Array (for distances)</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Update the crowd density of a station by assigning a passenger to it.</td>
+                    <td>Greedy Technique</td>
+                    <td>None (but binary trees concept is used)</td>
+                    <td>AVL Tree (for crowd density)</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Evaluate the connections between stations to determine which routes provide the best overall efficiency.</td>
+                    <td>Greedy Technique</td>
+                    <td>Kruskal’s Algorithm</td>
+                    <td>Union-Find</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Look for stations based on a specific keyword, returning a list of matching stations.</td>
+                    <td>Brute Force</td>
+                    <td>Brute force String Matching Algorithm</td>
+                    <td>Array (for storing stations)</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Arrange the list of stations according to their proximity to a defined starting point.</td>
+                    <td>Selection</td>
+                    <td>Heap Sort</td>
+                    <td>Array (for storing stations)</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Show a complete list of all stations in the network, including their crowd density and geographical coordinates.</td>
+                    <td>Sequential access</td>
+                    <td>None</td>
+                    <td>Array (for storing stations)</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Verify whether a direct route exists between two specified stations.</td>
+                    <td>Space and Time Trade-off</td>
+                    <td>None</td>
+                    <td>Lookup table</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
