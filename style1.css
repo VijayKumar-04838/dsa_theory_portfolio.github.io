@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+h1, h2, h3 {
+    color: #76c7c0; /* Soft teal for headings */
+}
+
+h1 {
+    border-bottom: 2px solid #76c7c0;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #1e1e1e; /* Slightly lighter dark background for sections */
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.subsection {
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1e1e1e; /* Consistent background for tables */
+    color: #ffffff; /* White text */
+}
+
+table th, table td {
+    border: 1px solid #333; /* Darker border for table cells */
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #76c7c0; /* Soft teal for table headers */
+    color: #121212; /* Dark text for contrast */
+}
+
+.challenges, .tips {
+    font-style: italic;
+    color: #aaaaaa; /* Light gray for emphasis */
+}
+
+.tips {
+    font-weight: bold;
+    color: #76c7c0; /* Soft teal for important tips */
+}
